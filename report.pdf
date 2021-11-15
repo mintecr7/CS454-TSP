@@ -1,0 +1,17 @@
+Traveling salesman problem
+
+The solver I implemented for this problem uses GA with 5 main functions
+
+distance()-calculates the distance between 2 cities 
+init_pop() populates intial popluation
+fitness() calaulate the total distance travled for a given route 
+mutate() mutates chromosomes from a population is 50%
+crossover() returns offsprings after performing simple swaping between parents
+
+The GA selects top 100 performing popluation and performs crossover to create
+offsprings and mutates the offsprings. Then chromosomes from the offsprings that performing 
+better than parent chromosomes replace them and are added to best_solutions.
+
+Dependences
+    pip install requests, numpy, random
+     
